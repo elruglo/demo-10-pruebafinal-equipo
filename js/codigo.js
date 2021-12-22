@@ -5,7 +5,7 @@ function mostrarNombres() {
     var alumnosRegalados = [];
     console.log(alumnos);
     if (alumnos.length <= 1){
-        alert("debes introducir mas de un número");
+        alert("debes introducir mas de un nombre");
     }
     while (alumnos.length != alumnosListos.length && alumnos.length > 1) {
          
