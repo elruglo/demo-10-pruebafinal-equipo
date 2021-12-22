@@ -1,12 +1,14 @@
+var alumnosListos = [];
+var alumnosRegalados = [];
 function mostrarNombres() {
+    console.log(alumnosListos.length);
+    if (alumnosListos.length > 0){
+        resetear();
+    }
     var nombres = document.querySelector("#nombres").value;
     var alumnos = nombres.split(",");
-    var alumnosListos = [];
-    var alumnosRegalados = [];
-    console.log(alumnos);
-    if (alumnos.length <= 1){
-        alert("debes introducir mas de un nombre");
-    }
+    
+   
     while (alumnos.length != alumnosListos.length && alumnos.length > 1) {
          
         do {
@@ -23,7 +25,7 @@ function mostrarNombres() {
 
         } while (alumnosListos.indexOf(alumno1) == -1);
 
-
+   
 
         /*  console.log(alumno1);
          console.log(aleatorio);
