@@ -4,8 +4,11 @@ function mostrarNombres() {
     var alumnosListos = [];
     var alumnosRegalados = [];
     console.log(alumnos);
-    while (alumnos.length != alumnosListos.length) {
-
+    if (alumnos.length <= 1){
+        alert("debes introducir mas de un número");
+    }
+    while (alumnos.length != alumnosListos.length && alumnos.length > 1) {
+         
         do {
             var aleatorio = Math.floor(Math.random() * alumnos.length);
             var alumno1 = alumnos[aleatorio];
@@ -30,9 +33,10 @@ function mostrarNombres() {
 
 }
 function crearInputs(nombre1, nombre2 = "") {
-
+    
     var contenedor = document.createElement("div");
-    contenedor.setAttribute('class', 'd-flex flex-row');
+    contenedor.setAttribute('class', 'd-flex flex-row contenedor');
+    
     var entrada = document.createElement("input");
     var entrada2 = document.createElement("input");
     entrada.setAttribute('type', 'text');
@@ -47,5 +51,9 @@ function crearInputs(nombre1, nombre2 = "") {
     var parent = document.querySelector("#entradas");
     parent.appendChild(contenedor);
 
+}
+function resetear(){
+    location.reload();
+   
 }
 
