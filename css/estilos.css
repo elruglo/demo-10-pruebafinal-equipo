@@ -3,10 +3,10 @@
 body{
   margin: 0;
   padding: 0;
-  background: #923519;
+  background: #9c774b;
   font-family: 'Open Sans', sans-serif;
   text-align: center;
-  font-size: 18px;
+  font-size: 17px;
   color: #fff;
 }
 .cabecera{
@@ -18,7 +18,7 @@ body{
 h1{
   color: #fff;
   transform: skew(0, -5deg);
-  text-shadow: 0 0 20px rgb(100, 136, 0);
+  text-shadow: 0 0 20px rgb(106, 212, 57);
   font-size: 2.5rem;
   padding: 0.2em;
 }  
@@ -30,7 +30,7 @@ button{
   width: 200px;
   font-family: 'Open Sans', sans-serif;
   position: relative;
-  background: #63A063;
+  background: #14285e;
   border: 100;
   color: #fff;
   font-weight: bold;
@@ -45,10 +45,4 @@ button:hover, button:focus{
 button:active{
   outline: 0;
   top: 8px;
-}
-.close{
-  margin: 20px 0;
-  cursor: pointer;
-  text-decoration: underline;
-  color: #000;
 }
