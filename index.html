@@ -16,7 +16,7 @@
 <body>
     <div class="cabecera">
         <h1>amigo invisible</h1>
-        <input class="form-control" id="nombres" type="text" placeholder="Introduce los nombres separados por comas (,)"/> 
+        <input class="form-control" id="nombres" type="text" placeholder="Introduce los nombres separados por comas (,)" onkeypress="return ((event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122) || (event.charCode == 44))" min="1" /> 
         <div id="entradaPrincipal"></div>
         <button onclick="mostrarNombres()">Prueba tu suerte</button>
         <button onclick="resetear()">Resetea tu suerte</button>
